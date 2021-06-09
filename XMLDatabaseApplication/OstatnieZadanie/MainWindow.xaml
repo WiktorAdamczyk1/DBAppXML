@@ -1,0 +1,32 @@
+﻿<Window x:Class="OstatnieZadanie.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OstatnieZadanie"
+        mc:Ignorable="d"
+        Title="Aplikacja XML" ResizeMode="NoResize" SizeToContent="WidthAndHeight" Width="850">
+    <Grid Height="565" HorizontalAlignment="Left" Width="844">
+        <Button Content="Kartoteka" HorizontalAlignment="Left" Margin="10,420,0,0" VerticalAlignment="Top" Width="150" Click="ShowKartoteka" Height="27" BorderBrush="#FF686868" Background="#FFE4E4E4"/>
+        <Button Content="Lekarstwo" HorizontalAlignment="Left" Margin="176,420,0,0" VerticalAlignment="Top" Width="150" Click="ShowLekarstwo" Height="28" BorderBrush="#FF686868" Background="#FFE4E4E4"/>
+        <Button Content="Pacjent" HorizontalAlignment="Left" Margin="347,421,0,0" VerticalAlignment="Top" Width="150" Click="ShowPacjent" Height="28" BorderBrush="#FF686868" Background="#FFE4E4E4"/>
+        <Button Content="Pracownik" HorizontalAlignment="Left" Margin="516,420,0,0" VerticalAlignment="Top" Width="150" Click="ShowPracownik" Height="27" BorderBrush="#FF686868" Background="#FFE4E4E4"/>
+        <Button Content="Recepta" HorizontalAlignment="Left" Margin="685,420,0,0" VerticalAlignment="Top" Width="150" Click="ShowRecepta" Height="27" BorderBrush="#FF686868" Background="#FFE4E4E4"/>
+        <Button Content="Recepta_Lekarstwo" HorizontalAlignment="Left" Margin="10,463,0,0" VerticalAlignment="Top" Width="150" Click="ShowRecepta_Lekarstwo" Height="28" BorderBrush="#FF686868" Background="#FFE4E4E4"/>
+        <Button Content="Sala" Margin="176,463,0,0" VerticalAlignment="Top" Click="ShowSala" HorizontalAlignment="Left" Width="150" Height="28" BorderBrush="#FF686868" Background="#FFE4E4E4"/>
+        <Button Content="Stanowisko" HorizontalAlignment="Left" Margin="347,463,0,0" VerticalAlignment="Top" Width="150" Click="ShowStanowisko" Height="27" BorderBrush="#FF686868" Background="#FFE4E4E4"/>
+        <Button Content="Wizyta" HorizontalAlignment="Left" Margin="516,463,0,0" VerticalAlignment="Top" Width="150" Click="ShowWizyta" Height="27" BorderBrush="#FF686868" Background="#FFE4E4E4"/>
+        <Button Content="Zabieg" HorizontalAlignment="Left" Margin="685,462,0,0" VerticalAlignment="Top" Width="150" Click="ShowZabieg" Height="28" BorderBrush="#FF686868" Background="#FFE4E4E4"/>
+        <DataGrid x:Name="Tablica" Margin="10,10,0,0" HorizontalAlignment="Left" Width="825" Height="399" VerticalAlignment="Top" SelectionChanged="Tablica_SelectionChanged"/>
+
+
+        <Button Content="Import From File" HorizontalAlignment="Left" Margin="10,509,0,0" VerticalAlignment="Top" Height="50" Width="825" FontSize="14" Background="White" Click="ReadFromXML"/>
+        <Label HorizontalAlignment="Left" Margin="10,414,0,0" VerticalAlignment="Top">
+            <StackPanel Orientation="Horizontal">
+            </StackPanel>
+        </Label>
+
+
+
+    </Grid>
+</Window>
